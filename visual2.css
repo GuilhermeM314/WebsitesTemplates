@@ -1,0 +1,268 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.banner{
+    background: url("https://cache.desktopnexus.com/cropped-wallpapers/2212/2212892-1920x1080-[DesktopNexus.com].jpg?st=sDyP27X-KQJqzLwMrG2Q3A&e=1562094970");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.top-bar{
+    background-color: #000;
+    display: flex;
+
+    width: 100%;
+    height: auto;
+}
+
+header{
+    color: #fff;
+    flex: 1;
+    font-size: 30px;
+    padding: 18px;
+    text-transform: uppercase;
+}
+
+nav{
+    flex: 3;
+    margin-top: 40px;
+    text-align: center;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+nav a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+/*Banner*/
+
+.banner-text{
+    display: flex;
+    padding: 15% 0;
+}
+
+.banner-text-items{
+    color: #fff;
+    margin: auto;
+    text-align: center;
+    width: 50%;
+}
+
+.banner-text-items h2{
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.banner-text-items p{
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+/*Main content*/
+
+.main-content{
+    background-color: #000;
+    display: flex;
+    flex-flow: row wrap;
+
+    padding: 5% 0;
+}
+
+.main1{
+    flex: 1;
+    text-align: center;
+}
+
+.main1 h2{
+    color: #fff;
+}
+
+.main1 p{
+    color: #fff;
+}
+
+
+
+
+
+
+
+/*Contact*/
+
+.contact-items{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact{
+    background: url("https://cache.desktopnexus.com/cropped-wallpapers/2415/2415044-1920x1080-[DesktopNexus.com].jpg?st=V0ib4jPDVLhTE0uaXWDGmw&e=1562094926");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding: 80px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.contact::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+
+    top: 0;
+    left: 0;
+
+    background: rgba(0,0,0,0.5);
+    z-index: -1;
+}
+
+.contact-items h2{
+    color: #fff;
+    font-size: 3em;
+    margin-bottom: 18px;
+}
+
+.contact-items input[type="text"]{
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 15px;
+    width: 50%;
+}
+
+.contact-items textarea{
+    border-radius: 10px;
+    height: 150px;
+    padding: 15px;
+    width: 50%;
+}
+
+
+.contact-items a{
+    background: #da4b29;
+    color: #fff;
+    display: block;
+    font-size: 15px;
+
+    margin-top: 25px;
+
+    padding: 15px 80px;
+
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+footer{
+    padding: 50px;
+
+    background-color: black;
+    color: white;
+
+    font-size: 15px;
+}
+
+footer a{
+    text-decoration: none;
+    color: lightblue;
+}
+
+
+
+a:hover, a:active{
+    text-decoration: underline;
+    color: lightblue;
+}
+
+
+
+
+@media all and (max-width: 500px){
+    .top-bar{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo{
+        padding: 18px 0 0;
+    }
+
+    nav{
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    nav a{
+        padding: 5px;
+    }
+
+    .banner-text-items{
+        width: 100%;
+    }
+
+    .banner-text-items h2{
+        font-size: 1.5em;
+    }
+
+    .main-content{
+        -ms-flex-direction: column;
+    }
+
+}
+
+@media all and (max-width: 800px){
+    .top-bar{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo{
+        padding: 18px 0 0;
+    }
+
+    nav{
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    nav a{
+        padding: 5px;
+    }
+
+    .banner-text-items{
+        width: 100%;
+    }
+
+    .banner-text-items h2{
+        font-size: 1.5em;
+    }
+
+    .main-content{
+        flex-direction: column;
+    }
+
+}
